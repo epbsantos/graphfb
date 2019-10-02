@@ -180,21 +180,21 @@ function chama(next) {
                         if (response.data[x].website == undefined) {
                             website = "";
                         } else {
-                            website = '<a role="button" target="_blank" href="'+ response.data[x].website +'" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="'+ response.data[x].website +'"><span class="oi" data-glyph="home"></span></a>';
+                            website = '<a role="button" target="_blank" href="'+ response.data[x].website +'" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="'+ response.data[x].website +'"><span class="oi oi-home"></span></a>';
                         }                           
 
                         var phone;
                         if (response.data[x].phone == undefined) {
                             phone = "";
                         } else {
-                            phone = '<button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="'+ response.data[x].phone +'"><span class="oi" data-glyph="phone"></span></button>';
+                            phone = '<button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="'+ response.data[x].phone +'"><span class="oi oi-phone"></span></button>';
                         }
 
                         var single_line_address;
                         if (response.data[x].single_line_address == undefined) {
                             single_line_address = "";
                         } else {
-                            single_line_address = '<button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="'+ response.data[x].single_line_address +'"><span class="oi" data-glyph="map"></span></button>';
+                            single_line_address = '<button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="'+ response.data[x].single_line_address +'"><span class="oi oi-map"></span></button>';
                         }
 
                         var description;
@@ -225,7 +225,7 @@ function chama(next) {
                   
                 }
 
-                main.append('<button class="btn btn-primary mais" type="button" onclick="chama(\''+response.paging.cursors.after+'\')"><span class="oi" data-glyph="plus"><br>Carregar mais <br> empreendimentos</span></button>');
+                main.append('<button class="btn btn-primary mais" type="button" onclick="chama(\''+response.paging.cursors.after+'\')"><span class="oi oi-plus"><br>Carregar mais <br> empreendimentos</span></button>');
 
                 $('[data-toggle="tooltip"]').tooltip();
                 $('[data-toggle="popover"]').popover();
@@ -313,21 +313,21 @@ window.fbAsyncInit = function() {
                         if (response.data[x].website == undefined) {
                             website = "";
                         } else {
-                            website = '<a role="button" target="_blank" href="'+ response.data[x].website +'" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="'+ response.data[x].website +'"><span class="oi" data-glyph="home"></span></a>';
+                            website = '<a role="button" target="_blank" href="'+ response.data[x].website +'" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="'+ response.data[x].website +'"><span class="oi oi-home"></span></a>';
                         }                           
 
                         var phone;
                         if (response.data[x].phone == undefined) {
                             phone = "";
                         } else {
-                            phone = '<button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="'+ response.data[x].phone +'"><span class="oi" data-glyph="phone"></span></button>';
+                            phone = '<button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="'+ response.data[x].phone +'"><span class="oi oi-phone"></span></button>';
                         }
 
                         var single_line_address;
                         if (response.data[x].single_line_address == undefined) {
                             single_line_address = "";
                         } else {
-                            single_line_address = '<button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="'+ response.data[x].single_line_address +'"><span class="oi" data-glyph="map"></span></button>';
+                            single_line_address = '<button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="'+ response.data[x].single_line_address +'"><span class="oi oi-map"></span></button>';
                         }
 
                         var description;
@@ -359,7 +359,7 @@ window.fbAsyncInit = function() {
                   
                 }
 
-                main.append('<button class="btn btn-primary mais" type="button" onclick="chama(\''+response.paging.cursors.after+'\')"><span class="oi" data-glyph="plus"><br>Carregar mais <br> empreendimentos</span></button>');
+                main.append('<button class="btn btn-primary mais" type="button" onclick="chama(\''+response.paging.cursors.after+'\')"><span class="oi oi-plus"><br>Carregar mais <br> empreendimentos</span></button>');
 
                 $('[data-toggle="tooltip"]').tooltip();
                 $('[data-toggle="popover"]').popover();
