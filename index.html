@@ -174,7 +174,14 @@ function chama(next) {
                             count = "";
                         } else {
                             count = '<button type="button" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Curtidas">'+response.data[x].engagement.count+'</button>';
-                        }                        
+                        }
+                    
+                        var starts;
+                        if (response.data[x].overall_star_rating == undefined) {
+                            starts = "";
+                        } else {
+                            starts = '<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Média de estrelas">'+response.data[x]..overall_star_rating+'</button>';
+                        }
 
                         var website;
                         if (response.data[x].website == undefined) {
@@ -210,6 +217,7 @@ function chama(next) {
                                  '<div class="card-body">'+
                                    '<h5 class="card-title"><a href="'+response.data[x].link+'">'+response.data[x].name+'</a></h5>'+
                                    count+
+                                   starts+
                                    website+
                                    phone+
                                    single_line_address+
