@@ -199,6 +199,13 @@ function chama(next) {
                         } else {
                             phone = '<button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="'+ response.data[x].phone +'"><span class="oi oi-phone"></span></button>';
                         }
+                    
+                        var email;
+                        if (response.data[x].emails == undefined) {
+                            email = "";
+                        } else {
+                            email = '<button type="button" class="btn btn-outline-primary" data-toggle="tooltip" data-placement="top" title="'+ response.data[x].emails +'"><span class="oi oi-envelope-closed"></span></button>';
+                        }                    
 
                         var single_line_address;
                         if (response.data[x].single_line_address == undefined) {
